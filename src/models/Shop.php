@@ -1,7 +1,7 @@
 <?php
-require_once 'BaseModel.php';
+namespace models;
 
-use GraphQL\Type\Definition\InterfaceType;
+require_once 'BaseModel.php';
 
 class Shop extends BaseModel
 {

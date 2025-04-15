@@ -1,13 +1,16 @@
 <?php
+
+namespace app\models;
+use app\models\BaseModel;
+
 // Category.php
-class Category
+class Category extends BaseModel
 {
     public int $id;
     public string $category;
 
-    public function __construct(int $id, string $category)
+    public function __construct()
     {
-        $this->id = $id;
-        $this->category = $category;
+        parent::__construct('categories', 'id', ['name', 'id']);
     }
 }
